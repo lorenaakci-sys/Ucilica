@@ -13,4 +13,12 @@ public class GeometrijskiLik {
     public String getNaziv() {
         return naziv;
     }
+
+    public double opseg() {
+        return 0;
+    }
+
+    public double povrsina() {
+        return 0;
+    }
 }

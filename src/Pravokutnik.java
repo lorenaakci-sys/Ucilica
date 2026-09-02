@@ -25,10 +25,12 @@ public class Pravokutnik extends GeometrijskiLik {
         this.b = b;
     }
 
+    @Override
     public double povrsina() {
         return a * b;
     }
 
+    @Override
     public double opseg() {
         return 2 * (a+b);
     }

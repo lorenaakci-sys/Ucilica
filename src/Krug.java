@@ -15,10 +15,12 @@ public class Krug extends GeometrijskiLik {
         this.radijus = radijus;
     }
 
+    @Override
     public double opseg() {
         return 2 * this.radijus * Math.PI;
     }
 
+    @Override
     public double povrsina() {
         return Math.pow(this.radijus, 2) * Math.PI;
     }

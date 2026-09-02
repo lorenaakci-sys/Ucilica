@@ -35,10 +35,12 @@ public class Trokut extends GeometrijskiLik {
         this.c = c;
     }
 
+    @Override
     public double opseg() {
         return a + b + c;
     }
 
+    @Override
     public double povrsina() {
         double s = (this.a + this.b + this.c) / 2;
         return Math.sqrt(s*(s-a)*(s-b)*(s-c));
