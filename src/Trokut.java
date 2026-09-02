@@ -1,23 +1,14 @@
-public class Trokut {
+public class Trokut extends GeometrijskiLik {
 
     private int a;
     private int b;
     private int c;
-    private String naziv;
 
     public Trokut(String naziv, int a, int b, int c) {
-        this.naziv = naziv;
+        super(naziv);
         this.a = a;
         this.b = b;
         this.c = c;
-    }
-
-    public String getNaziv() {
-        return this.naziv;
-    }
-
-    public void setNaziv(String naziv) {
-        this.naziv = naziv;
     }
 
     public int getA() {
