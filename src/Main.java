@@ -11,6 +11,6 @@ public class Main {
         System.out.println("Naziv: " + krug.getNaziv() + ", Opseg: " + krug.opseg() + ", Površina: " + krug.povrsina());
         System.out.println("Naziv: " + trokut.getNaziv() + ", Opseg: " + trokut.opseg() + ", Površina: " + trokut.povrsina());
         System.out.println("Naziv: " + pravokutnik.getNaziv() + ", Opseg: " + pravokutnik.opseg() + ", Površina: " + pravokutnik.povrsina());
-        System.out.println("Naziv: " + lik.getNaziv() + ", Opseg: " + lik.opseg() + ", Površina: " + krug.povrsina());
+        System.out.println("Naziv: " + lik.getNaziv() + ", Opseg: " + lik.opseg() + ", Površina: " + lik.povrsina());
     }
 }
