@@ -34,4 +34,9 @@ public class Pravokutnik extends GeometrijskiLik {
     public double opseg() {
         return 2 * (a+b);
     }
+
+    @Override
+    public int compareTo(GeometrijskiLik o) {
+        return Double.compare(this.povrsina(), o.povrsina());
+    }
 }

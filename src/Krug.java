@@ -24,4 +24,9 @@ public class Krug extends GeometrijskiLik {
     public double povrsina() {
         return Math.pow(this.radijus, 2) * Math.PI;
     }
+
+    @Override
+    public int compareTo(GeometrijskiLik o) {
+        return Double.compare(this.povrsina(), o.povrsina());
+    }
 }

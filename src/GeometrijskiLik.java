@@ -1,4 +1,4 @@
-public class GeometrijskiLik {
+public abstract class GeometrijskiLik implements Comparable<GeometrijskiLik>{
 
     String naziv;
 
@@ -14,11 +14,7 @@ public class GeometrijskiLik {
         return naziv;
     }
 
-    public double opseg() {
-        return 0;
-    }
+    public abstract double opseg();
 
-    public double povrsina() {
-        return 0;
-    }
+    public abstract double povrsina();
 }

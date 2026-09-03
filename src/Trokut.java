@@ -46,4 +46,8 @@ public class Trokut extends GeometrijskiLik {
         return Math.sqrt(s*(s-a)*(s-b)*(s-c));
     }
 
+    @Override
+    public int compareTo(GeometrijskiLik o) {
+        return Double.compare(this.povrsina(), o.povrsina());
+    }
 }
