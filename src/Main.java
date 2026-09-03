@@ -1,16 +1,19 @@
+import java.util.Arrays;
+
 public class Main {
 
     static void main (String[] args) {
 
-        Krug krug = new Krug("Plavi krug", 6);
-        Trokut trokut = new Trokut("Crveni trokut", 9, 7, 5);
-        Pravokutnik pravokutnik = new Pravokutnik("Zeleni pravokutnik", 6, 12);
+        GeometrijskiLik[] likovi = {
+                new Krug("Zeleni krug", 6),
+                new Trokut("Plavi trokut", 8, 5, 6),
+                new Pravokutnik("Žuti pravokutnik", 7, 9)
+        };
 
-        GeometrijskiLik lik = new Krug("Žuti krug", 11);
+        Arrays.sort(likovi);
 
-        System.out.println("Naziv: " + krug.getNaziv() + ", Opseg: " + krug.opseg() + ", Površina: " + krug.povrsina());
-        System.out.println("Naziv: " + trokut.getNaziv() + ", Opseg: " + trokut.opseg() + ", Površina: " + trokut.povrsina());
-        System.out.println("Naziv: " + pravokutnik.getNaziv() + ", Opseg: " + pravokutnik.opseg() + ", Površina: " + pravokutnik.povrsina());
-        System.out.println("Naziv: " + lik.getNaziv() + ", Opseg: " + lik.opseg() + ", Površina: " + lik.povrsina());
+        for (int i = 0; i < likovi.length; i++) {
+            System.out.println(likovi[i].getNaziv() + " = " + likovi[i].povrsina());
+        }
     }
 }
